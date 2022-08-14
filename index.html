@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title> AutomateFood - Installation with Apache</title>
+    <title> AutomateFood - Getting Started</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <meta name="csrf-token" content="rDUmmYssQn68dsTHswF04MgGjkb7o39EHPjSmbOd">
@@ -57,8 +57,8 @@
                             </a>
                         </li>
                         <li class="">
-                            <a href="installing-automatefood.html" title="" target="_blank"
-                                onclick="redirectToThePage(this)" data-href="installing-automatefood.html">
+                            <a href="installing-maildollsaas.html" title="" target="_blank"
+                                onclick="redirectToThePage(this)" data-href="installing-maildollsaas.html">
                                 Installing AutomateFood
                             </a>
                         </li>
@@ -213,7 +213,17 @@
              * Initial Editor data
              */
             data: {
-                blocks: [{ "id": "k4rLS9Zl3y", "type": "header", "data": { "text": "Installation with Apache", "level": 2 } }, { "id": "dwQR4_TB9G", "type": "header", "data": { "text": "Installation with Apache", "level": 2 } }, { "id": "0ko9s6KrZL", "type": "paragraph", "data": { "text": "Before installing, make sure mod_rewrite is enabled." } }, { "id": "YQ5SN-RJQ7", "type": "paragraph", "data": { "text": "Unzip the source file" } }, { "id": "S_hBQcJ7jq", "type": "paragraph", "data": { "text": "<code>cd /home/user</code>" } }, { "id": "21Hc8xhGXG", "type": "paragraph", "data": { "text": "<code>unzip automatefood.zip</code>" } }, { "id": "i1_Dc0S46e", "type": "paragraph", "data": { "text": "&nbsp; /home/user/<mark class=\"cdx-marker\">automatefood</mark>, you can configure Apache virtual host as follows (remember to point the DocumentRoot to the public folder of the source." } }, { "id": "sgJKdY9nsC", "type": "code", "data": { "code": "<VirtualHost *:80>\n\tServerName yoursite.com\n\tDocumentRoot \"/home/user/automatefood/public\"\n\tOptions Indexes FollowSymLinks\n\t<Directory \"/home/user/automatefood/public\">\n\t\tAllowOverride All\n\t\tRequire all granted\n\t</Directory>\n</VirtualHost>" } }, { "id": "CXoFR72fTJ", "type": "paragraph", "data": { "text": "Change the director/file’s owner to Apache’s running user (www-data for example), to make sure it has proper permission on your source files" } }, { "id": "EXytkinA58", "type": "paragraph", "data": { "text": "<code>sudo chown www-data:www-data -R /home/user/automatefood</code>" } }, { "id": "Jg5EAWTuJE", "type": "paragraph", "data": { "text": "<code>sudo chmod 775 -R /home/user/automatefood</code>" } }, { "id": "wlRviOoJU1", "type": "delimiter", "data": {} }]
+                blocks: [
+                    { "id": "k4rLS9Zl3y", "type": "header", "data": { "text": "Getting Started", "level": 2 } },
+                    { "id": "1UHAmjdrpP", "type": "header", "data": { "text": "Introduction", "level": 2 } },
+                    { "id": "N6j65Bnvap", "type": "paragraph", "data": { "text": "In this SaaS application, you can use the software for yourself also can sell the application access to the client who wants a Restaurant solution without any script purchase. All they need is to purchase a subscription. With this application, you can register a user with a subdomain based on the subscription plan. The user can use the AutomateFood application depending on the subscription. Each customer must have a valid subscription plan. There is a trial mode where customers can use the application for limited days and times." } },
+                    { "id": "mvy_UA8c2B", "type": "header", "data": { "text": "Documentation By 'SoftTech IT'", "level": 2 } },
+                    { "id": "VseYDJ8uvH", "type": "paragraph", "data": { "text": "version: 1.0" } },
+                    { "id": "qq-QgKpbje", "type": "paragraph", "data": { "text": "created at: 23 January 2022" } },
+                    { "id": "Ts8gawysoZ", "type": "paragraph", "data": { "text": "by:&nbsp;<a href=\"http://softtechitltd.com\"><mark class=\"cdx-marker\">SoftTech IT</mark></a>" } }, { "id": "693wFN6Vba", "type": "paragraph", "data": { "text": "support:&nbsp;<a href=\"https://softtechitsupport.com\"><mark class=\"cdx-marker\">https://softtechitsupport.com</mark></a>" } },
+                    { "id": "HbqDNsrWv_", "type": "paragraph", "data": { "text": "Thank you for purchasing this Script. For further questions please contact us through\n<a href=\"https://codecanyon.net/user/softtech-it/portfolio\">Codecanyon</a> or leave a comment. We'd love to respond to you!&nbsp;" } }, { "id": "8cZ0odW8xm", "type": "header", "data": { "text": "Key Features", "level": 2 } },
+                    { "id": "XXPpW1KsoC", "type": "list", "data": { "style": "ordered", "items": ["Subdomain-Based SaaS", "Admin Dashboard", "Admin Visual Analytics &amp; Statistics Report", "Subscription Plan", "Newsletter", "PayPal, Visa, Master Card, SSL Commerz Payment Gateways", "Invoice System", "Trial Mode<br>", "Client Management", "User Expiry Alert", "User Blocking", "Limit Manager", "Offline Payment", "SEO", "Menu Builder", "Page Builder", "Multi-Currency Support", "SMTP", "Dark Mode", "Billing Renew", "Customer Account Report", "Application Setup"] } },
+                    { "id": "HcQmEw7Xsb", "type": "delimiter", "data": {} }]
             },
             onChange: function (api, event) {
                 console.log('something changed', event);
@@ -263,7 +273,9 @@
         });
 
         // RIGHT SIDEBAR
-        var section = [{ "id": "k4rLS9Zl3y", "type": "header", "data": { "text": "Installation with Apache", "level": 2 } }, { "id": "dwQR4_TB9G", "type": "header", "data": { "text": "Installation with Apache", "level": 2 } }, { "id": "0ko9s6KrZL", "type": "paragraph", "data": { "text": "Before installing, make sure mod_rewrite is enabled." } }, { "id": "YQ5SN-RJQ7", "type": "paragraph", "data": { "text": "Unzip the source file" } }, { "id": "S_hBQcJ7jq", "type": "paragraph", "data": { "text": "<code>cd /home/user</code>" } }, { "id": "21Hc8xhGXG", "type": "paragraph", "data": { "text": "<code>unzip maildoll.zip</code>" } }, { "id": "i1_Dc0S46e", "type": "paragraph", "data": { "text": "&nbsp; /home/user/<mark class=\"cdx-marker\">automatefood</mark>, you can configure Apache virtual host as follows (remember to point the DocumentRoot to the public folder of the source." } }, { "id": "sgJKdY9nsC", "type": "code", "data": { "code": "<VirtualHost *:80>\n\tServerName yoursite.com\n\tDocumentRoot \"/home/user/automatefood/public\"\n\tOptions Indexes FollowSymLinks\n\t<Directory \"/home/user/automatefood/public\">\n\t\tAllowOverride All\n\t\tRequire all granted\n\t</Directory>\n</VirtualHost>" } }, { "id": "CXoFR72fTJ", "type": "paragraph", "data": { "text": "Change the director/file’s owner to Apache’s running user (www-data for example), to make sure it has proper permission on your source files" } }, { "id": "EXytkinA58", "type": "paragraph", "data": { "text": "<code>sudo chown www-data:www-data -R /home/user/automatefood</code>" } }, { "id": "Jg5EAWTuJE", "type": "paragraph", "data": { "text": "<code>sudo chmod 775 -R /home/user/automatefood</code>" } }, { "id": "wlRviOoJU1", "type": "delimiter", "data": {} }];
+        var section = [{ "id": "k4rLS9Zl3y", "type": "header", "data": { "text": "Getting Started", "level": 2 } }, { "id": "1UHAmjdrpP", "type": "header", "data": { "text": "Introduction", "level": 2 } },
+        { "id": "N6j65Bnvap", "type": "paragraph", "data": { "text": "AutomateFood is a subdomain-based application only for AutomateFood - Email &amp; SMS Marketing Application. With this application, you can register a user with a subdomain based on the subscription plan. The user can use the AutomateFood application depending on the subscription. Each customer must have a valid subscription plan. There is a trial mode where customers can use the application for limited days and times." } },
+        { "id": "mvy_UA8c2B", "type": "header", "data": { "text": "Documentation By 'SoftTech IT'", "level": 2 } }, { "id": "VseYDJ8uvH", "type": "paragraph", "data": { "text": "version: 1.0" } }, { "id": "qq-QgKpbje", "type": "paragraph", "data": { "text": "created at:  2 August 2022" } }, { "id": "Ts8gawysoZ", "type": "paragraph", "data": { "text": "by:&nbsp;<a href=\"http://softtechitltd.com\"><mark class=\"cdx-marker\">SoftTech IT</mark></a>" } }, { "id": "693wFN6Vba", "type": "paragraph", "data": { "text": "support:&nbsp;<a href=\"https://softtechitsupport.com\"><mark class=\"cdx-marker\">https://softtechitsupport.com</mark></a>" } }, { "id": "HbqDNsrWv_", "type": "paragraph", "data": { "text": "Thank you for purchasing this Script. For further questions please contact us through\n<a href=\"https://codecanyon.net/user/softtech-it/portfolio\">Codecanyon</a> or leave a comment. We'd love to respond to you!&nbsp;" } }, { "id": "8cZ0odW8xm", "type": "header", "data": { "text": "Key Features", "level": 2 } }, { "id": "XXPpW1KsoC", "type": "list", "data": { "style": "ordered", "items": ["Subdomain-Based SaaS", "Admin Dashboard", "Admin Visual Analytics &amp; Statistics Report", "Subscription Plan", "Newsletter", "PayPal, Visa, Master Card, SSL Commerz Payment Gateways", "Invoice System", "Trial Mode<br>", "Client Management", "User Expiry Alert", "User Blocking", "Limit Manager", "Offline Payment", "SEO", "Menu Builder", "Page Builder", "Multi-Currency Support", "SMTP", "Dark Mode", "Billing Renew", "Customer Account Report", "Application Setup"] } }, { "id": "HcQmEw7Xsb", "type": "delimiter", "data": {} }];
 
         section.forEach(function (item) {
             if (item.type == 'header') {
