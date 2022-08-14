@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title> AutomateFood - Installation</title>
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+  <meta name="csrf-token" content="rDUmmYssQn68dsTHswF04MgGjkb7o39EHPjSmbOd">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="./editorjs/assets/demo.css" rel="stylesheet">
+<script src="./editorjs/assets/json-preview.js"></script>  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+  
+    
+    <div class="ce-example">
+        <div class="container-fluid ce-example__header laradoc_header">
+            <div class="row w-100 align-items-center">
+                <div class="col-sm-3 col-2">
+                    <img class="editor_img"
+                        src="logo.png"
+                        class="r-6wscbn" style="height: auto; max-height: 40px; width: auto;">
+                </div>
+            </div>
+        </div>
+
+        <div class="ce-example__content _ce-example__content--small" style="margin-top: 80px;">
+            
+            <div class="laradoc_menu_wrapper pt-6 ">
+                <div id="editorjs_menu_list" class="laradoc_menu">
+                    <ul class="main_menu">
+                                                     <li class="">
+                                <a href="getting-started.html" 
+                                title="" 
+                                target="_blank" 
+                                onclick="redirectToThePage(this)" 
+                                data-href="getting-started.html">
+                                        Getting Start
+                                </a>
+                            </li>
+                                                     <li class="">
+                                <a href="installation.html" 
+                                title="" 
+                                target="_blank" 
+                                onclick="redirectToThePage(this)" 
+                                data-href="installation.html">
+                                        Installation
+                                </a>
+                            </li>
+                                                     <li class="">
+                                <a href="installation-with-apache.html" 
+                                title="" 
+                                target="_blank" 
+                                onclick="redirectToThePage(this)" 
+                                data-href="installation-with-apache.html">
+                                        Installation with Apache
+                                </a>
+                            </li>
+                                                     <li class="">
+                                <a href="shared-hosting-install.html" 
+                                title="" 
+                                target="_blank" 
+                                onclick="redirectToThePage(this)" 
+                                data-href="shared-hosting-install.html">
+                                        Shared Hosting Install
+                                </a>
+                            </li>
+                                                     <li class="">
+                                <a href="installing-maildollsaas.html" 
+                                title="" 
+                                target="_blank" 
+                                onclick="redirectToThePage(this)" 
+                                data-href="installing-maildollsaas.html">
+                                        Installing AutomateFood
+                                </a>
+                            </li>
+                                                     <li class="">
+                                <a href="copyright-technologies.html" 
+                                title="" 
+                                target="_blank" 
+                                onclick="redirectToThePage(this)" 
+                                data-href="copyright-technologies.html">
+                                        Copyright &amp; Technologies
+                                </a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+
+            <div class="ce-example__content _ce-example__content--small" style="margin-top: 80px;">
+                <div id="editorjs"></div>
+            </div>
+
+            
+
+            <ul class="padding laradoc_right-sidebar">
+               
+            </ul>
+        </div>
+    </div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/header@latest"></script><!-- Header -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/simple-image@latest"></script><!-- Image -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/delimiter@latest"></script><!-- Delimiter -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/list@latest"></script><!-- List -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/checklist@latest"></script><!-- Checklist -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/quote@latest"></script><!-- Quote -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/code@latest"></script><!-- Code -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/embed@latest"></script><!-- Embed -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/table@latest"></script><!-- Table -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/link@latest"></script><!-- Link -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/warning@latest"></script><!-- Warning -->
+
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/marker@latest"></script><!-- Marker -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/inline-code@latest"></script><!-- Inline Code -->
+
+<!-- Load Editor.js's Core -->
+<script src="https://cdn.jsdelivr.net/npm/@editorjs/editorjs@latest"></script>
+<script type="text/javascript" src="./menu_editor/notify.js"></script>
+<script src="./assets/js/frontend.js"></script>
+   
+    <!-- Initialization -->
+    <script>
+        /**
+         * To initialize the Editor, create a new instance with configuration object
+         * @see  docs/installation.md for mode details
+         */
+        var editor = new EditorJS({
+            /**
+             * Enable/Disable the read onlyll mode
+             */
+            readOnly: true,
+
+            /**
+             * Wrapper of Editor
+             */
+            holder: 'editorjs',
+
+            /**
+             * Common Inline Toolbar settings
+             * - if true (or not specified), the order from 'tool' property will be used
+             * - if an array of tool names, this order will be used
+             */
+            // inlineToolbar: ['link', 'marker', 'bold', 'italic'],
+            // inlineToolbar: true,
+
+            /**
+             * Tools list
+             */
+            tools: {
+                /**
+                 * Each Tool is a Plugin. Pass them via 'class' option with necessary settings {@link  docs/tools.md}
+                 */
+                header: {
+                    class: Header,
+                    inlineToolbar: ['marker', 'link'],
+                    config: {
+                        placeholder: 'Header'
+                    },
+                    shortcut: 'CMD+SHIFT+H'
+                },
+
+                /**
+                 * Or pass class directly without any configuration
+                 */
+                image: SimpleImage,
+
+                list: {
+                    class: List,
+                    inlineToolbar: true,
+                    shortcut: 'CMD+SHIFT+L'
+                },
+
+                checklist: {
+                    class: Checklist,
+                    inlineToolbar: true,
+                },
+
+                quote: {
+                    class: Quote,
+                    inlineToolbar: true,
+                    config: {
+                        quotePlaceholder: 'Enter a quote',
+                        captionPlaceholder: 'Quote\'s author',
+                    },
+                    shortcut: 'CMD+SHIFT+O'
+                },
+
+                warning: Warning,
+
+                marker: {
+                    class: Marker,
+                    shortcut: 'CMD+SHIFT+M'
+                },
+
+                code: {
+                    class: CodeTool,
+                    shortcut: 'CMD+SHIFT+C'
+                },
+
+                delimiter: Delimiter,
+
+                inlineCode: {
+                    class: InlineCode,
+                    shortcut: 'CMD+SHIFT+C'
+                },
+
+                linkTool: LinkTool,
+
+                embed: Embed,
+
+                table: {
+                    class: Table,
+                    inlineToolbar: true,
+                    shortcut: 'CMD+ALT+T'
+                },
+
+            },
+
+            /**
+             * This Tool will be used as default
+             */
+            // defaultBlock: 'paragraph',
+
+            /**
+             * Initial Editor data
+             */
+            data: {
+                blocks: [{"id":"k4rLS9Zl3y","type":"header","data":{"text":"Installation","level":2}},{"id":"rQhCT6vj9U","type":"header","data":{"text":"System Requirements","level":2}},{"id":"IKY-DFOD2t","type":"paragraph","data":{"text":"<code>PHP &gt;= 8.0+</code>"}},{"id":"RwM6N68gEn","type":"paragraph","data":{"text":"<code>BCMath PHP Extension</code>"}},{"id":"6UUU_x2TUa","type":"paragraph","data":{"text":"<code>Ctype PHP Extension</code>"}},{"id":"zkhtEDotFz","type":"paragraph","data":{"text":"<code>Fileinfo PHP Extension</code>"}},{"id":"XZSaMr_dxp","type":"paragraph","data":{"text":"<code>JSON PHP Extension</code>"}},{"id":"2asB_59I_V","type":"paragraph","data":{"text":"<code>Mbstring PHP Extension</code>"}},{"id":"CCF3RX1TL2","type":"paragraph","data":{"text":"<code>OpenSSL PHP Extension</code>"}},{"id":"pMDFNy3AjY","type":"paragraph","data":{"text":"<code>PDO PHP Extension</code>"}},{"id":"N2fiGntKAS","type":"paragraph","data":{"text":"<code>Tokenizer PHP Extension</code>"}},{"id":"iYrU1F-vmR","type":"paragraph","data":{"text":"<code>XML PHP Extension</code>"}},{"id":"iMJAw8V5w_","type":"paragraph","data":{"text":"<code>curl enable</code>"}},{"id":"PGXcUWoHS6","type":"paragraph","data":{"text":"zip enables"}},{"id":"o58mQno3qd","type":"header","data":{"text":"File and folder permissions","level":2}},{"id":"Xd3BDXChe0","type":"paragraph","data":{"text":"<code>/bootstrap        777</code>"}},{"id":"PnM-wnXeqF","type":"paragraph","data":{"text":"<code>/public           777</code>"}},{"id":"G6ufkXcjeT","type":"paragraph","data":{"text":"<code>/storage          777</code>"}},{"id":"9lrAa3VKqt","type":"paragraph","data":{"text":"<code>/public/uploads   777</code>"}},{"id":"urLNRl9nXH","type":"paragraph","data":{"text":"<code>.env              777</code>"}},{"id":"5NlLj9ibxS","type":"paragraph","data":{"text":"<code>.htaccess</code>"}},{"id":"_ovz2xJk1h","type":"paragraph","data":{"text":"index.php"}},{"id":"eLCMrpgrYY","type":"delimiter","data":{}}]
+            },
+            onChange: function(api, event) {
+                console.log('something changed', event);
+            }
+        });
+
+        /**
+         * Saving button
+         */
+        const saveButton = document.getElementById('saveButton');
+
+        // menu helper funtions
+        $("body").delegate(".main_menu li", "click", function(e) {
+
+            e.preventDefault();
+            $(this).toggleClass("changeStyle");
+            $('.submenu').toggleClass("active");
+        });
+
+        // menu helper funtions
+        $("body").delegate(".submenu li", "click", function(e) {
+            e.preventDefault();
+
+            $(this).toggleClass("active");
+            $('.doubleSubmenu').toggleClass("active");
+        });
+
+
+        // search open 
+        $(".serachBtn").on('click',function() {
+            $(".search-overflow").addClass("open");
+        });
+
+        // search close
+        $(".serachClose").on('click',function() {
+            $(".search-overflow").removeClass("open");
+        });
+
+        // right sidebar
+        $(".rightSideTrigger").on('click',function() {
+            $(".laradoc_right-sidebar").toggleClass("open");
+        });
+
+        // left sidebar
+        $(".leftSideTrigger").on('click',function() {
+            $(".laradoc_menu_wrapper").toggleClass("open");
+        });
+
+
+
+        // RIGHT SIDEBAR
+        var section = [{"id":"k4rLS9Zl3y","type":"header","data":{"text":"Installation","level":2}},{"id":"rQhCT6vj9U","type":"header","data":{"text":"System Requirements","level":2}},{"id":"IKY-DFOD2t","type":"paragraph","data":{"text":"<code>PHP &gt;= 8.0+</code>"}},{"id":"RwM6N68gEn","type":"paragraph","data":{"text":"<code>BCMath PHP Extension</code>"}},{"id":"6UUU_x2TUa","type":"paragraph","data":{"text":"<code>Ctype PHP Extension</code>"}},{"id":"zkhtEDotFz","type":"paragraph","data":{"text":"<code>Fileinfo PHP Extension</code>"}},{"id":"XZSaMr_dxp","type":"paragraph","data":{"text":"<code>JSON PHP Extension</code>"}},{"id":"2asB_59I_V","type":"paragraph","data":{"text":"<code>Mbstring PHP Extension</code>"}},{"id":"CCF3RX1TL2","type":"paragraph","data":{"text":"<code>OpenSSL PHP Extension</code>"}},{"id":"pMDFNy3AjY","type":"paragraph","data":{"text":"<code>PDO PHP Extension</code>"}},{"id":"N2fiGntKAS","type":"paragraph","data":{"text":"<code>Tokenizer PHP Extension</code>"}},{"id":"iYrU1F-vmR","type":"paragraph","data":{"text":"<code>XML PHP Extension</code>"}},{"id":"iMJAw8V5w_","type":"paragraph","data":{"text":"<code>curl enable</code>"}},{"id":"PGXcUWoHS6","type":"paragraph","data":{"text":"zip enables"}},{"id":"o58mQno3qd","type":"header","data":{"text":"File and folder permissions","level":2}},{"id":"Xd3BDXChe0","type":"paragraph","data":{"text":"<code>/bootstrap        777</code>"}},{"id":"PnM-wnXeqF","type":"paragraph","data":{"text":"<code>/public           777</code>"}},{"id":"G6ufkXcjeT","type":"paragraph","data":{"text":"<code>/storage          777</code>"}},{"id":"9lrAa3VKqt","type":"paragraph","data":{"text":"<code>/public/uploads   777</code>"}},{"id":"urLNRl9nXH","type":"paragraph","data":{"text":"<code>.env              777</code>"}},{"id":"5NlLj9ibxS","type":"paragraph","data":{"text":"<code>.htaccess</code>"}},{"id":"_ovz2xJk1h","type":"paragraph","data":{"text":"index.php"}},{"id":"eLCMrpgrYY","type":"delimiter","data":{}}];
+
+        section.forEach(function(item) {
+            if (item.type == 'header') {
+                var header = item.data.text;
+                $('.laradoc_right-sidebar').append(
+                    '<li><a class="text-dark p-2" href="javascript:;"><i class="fas fa-angle-double-right"></i> ' +
+                    header + '</a></li>');
+            }
+        });
+
+
+    </script>
+
+    <script src="./assets/js/frontend.js"></script>
+
+
+</body>
+</html>
